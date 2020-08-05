@@ -1,0 +1,168 @@
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  background: #f3f3f3;
+  font-family: 'Manjari', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: .5s ease;
+}
+a:hover {
+  color: #0080ff;
+}
+.form {
+  background: #fff;
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+.top-area {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+.top-area:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-area li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: black;
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.top-area li a:hover {
+  background: #0080ff;
+  color: #ffffff;
+}
+.top-area .active a {
+  background: #1da1f2;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-weight: 200;
+  margin: 0 0 30px;
+}
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: black;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 12px;
+  
+
+}
+label .req {
+  margin: 20px;
+  color: #1da1f2;
+}
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 12px;
+
+}
+label.active .req {
+  opacity: 0;
+}
+label.highlight {
+  color: black;
+}
+input, textarea {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  background-image: none;
+  border: none;
+  color: black;
+    border-bottom: 1px solid  black;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #5D94F9;
+}
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+.label-field {
+  position: relative;
+  margin-bottom: 40px;
+}
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #3B68F3 ;
+  color: white;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #0080ff;
+}
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+@media (max-width: 765px) {
+    label {
+      left: 0;
+    }    }
+}
